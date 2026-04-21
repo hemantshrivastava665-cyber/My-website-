@@ -7,6 +7,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
   <style>
+  /* BLOG LIST */
+.blog-list {
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+}
+
+/* CLICKABLE CARD */
+.blog-item {
+  display: block;
+  background: rgba(255,255,255,0.1);
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.blog-item:hover {
+  transform: scale(1.03);
+  background: rgba(255,255,255,0.2);
+}
   .card {
   width: 90%;
   max-width: 400px;
@@ -169,6 +194,31 @@
   // First load pe bhi show ho
   window.dispatchEvent(new Event('scroll'));
 </script>
+<!-- BLOG SECTION -->
+<h2 class="section-title">🔥 Latest Blogs</h2>
 
+<div class="blog-list">
+
+  <a href="vlogs.html" class="blog-item">
+    <h3>💀 Mobile se paisa kamana sach hai ya scam?</h3>
+    <p>Real truth jo koi nahi batata... click karke full blog padho 👇</p>
+  </a>
+
+  <a href="vlogs.html" class="blog-item">
+    <h3>😳 Maine mobile se website bana li</h3>
+    <p>Without laptop coding possible hai ya nahi? meri journey dekho 👇</p>
+  </a>
+
+  <a href="vlogs.html" class="blog-item">
+    <h3>🔥 Students ke liye earning ideas</h3>
+    <p>0 investment se kaise start kare? full guide 👇</p>
+  </a>
+
+  <a href="vlogs.html" class="blog-item">
+    <h3>⚡ Best apps jo paise kama ke de sakte hain</h3>
+    <p>Top list jo actually kaam karti hai 👇</p>
+  </a>
+
+</div>
 </body>
 </html>
