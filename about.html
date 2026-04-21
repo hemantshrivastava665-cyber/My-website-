@@ -2,9 +2,18 @@
 <html>
 <head>
 <title>About</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 <style>
+.card {
+  width: 90%;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 20px;
+}
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -13,7 +22,14 @@ body {
   background: url("https://www.transparenttextures.com/patterns/stardust.png"),
               linear-gradient(135deg,#0f2027,#203a43,#2c5364);
 }
-
+.btn {
+  display: block;
+  width: 80%;
+  max-width: 250px;
+  margin: 10px auto;
+  padding: 12px;
+  font-size: 16px;
+}
 .navbar {
   display: flex;
   justify-content: center;
@@ -23,13 +39,27 @@ body {
 }
 
 .navbar a { color: white; text-decoration: none; }
-
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
 .card {
   background: rgba(255,255,255,0.1);
   margin: 50px auto;
   padding: 30px;
   border-radius: 20px;
   max-width: 350px;
+}
+@media (min-width: 768px) {
+  .card {
+    max-width: 500px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
 }
 </style>
 </head>

@@ -2,11 +2,18 @@
 <html>
 <head>
   <title>Anywhere</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
   <style>
+  .card {
+  width: 90%;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 20px;
+}
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
@@ -28,13 +35,34 @@
       position: sticky;
       top: 0;
     }
-
+.btn {
+  display: block;
+  width: 80%;
+  max-width: 250px;
+  margin: 10px auto;
+  padding: 12px;
+  font-size: 16px;
+}
     .navbar a {
       color: white;
       text-decoration: none;
       font-weight: bold;
     }
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .card {
+    max-width: 500px;
+  }
 
+  h1 {
+    font-size: 36px;
+  }
+}
     /* CARD */
     .card {
       background: rgba(255,255,255,0.1);
@@ -101,8 +129,8 @@
 
 <!-- SECTION 1 -->
 <div class="card">
-  <h1>Welcome 🚀</h1>
-  <p>Yaha tumhe daily life, earning tips aur fun content milega 😎</p>
+  <h1>Welcome </h1>
+  <p>Yaha tumhe daily life, earning tips aur fun content milega </p>
 
   <a href="https://www.instagram.com/anywhere_z?igsh=cXNxcWU3NHBqOTg4" class="btn insta">Instagram</a>
   <a href="https://t.me/anywherezvastav" class="btn telegram">Telegram</a>
@@ -111,15 +139,15 @@
 <!-- SECTION 2 -->
 <div class="card">
   <h2>My Journey</h2>
-  <p>Yaha click karke dekho tumhare liye special dund ke laaya hu. 🔥</p>
+  <p>Yaha click karke dekho tumhare liye special item dund ke laaya hu. </p>
 
-  <a href="#" class="btn deals">Best Deals 🔥</a>
+  <a href="#" class="btn deals">Best Deals </a>
 </div>
 
 <!-- SECTION 3 -->
 <div class="card">
   <h2>Follow for More</h2>
-  <p>Daily updates ke liye mujhe follow karo 👇</p>
+  <p>Daily updates ke liye mujhe follow karo </p>
 
   <a href="https://www.instagram.com/anywhere_z?igsh=cXNxcWU3NHBqOTg4" class="btn insta">Follow Now</a>
 </div>
