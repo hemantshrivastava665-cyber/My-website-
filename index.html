@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anywhere</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      text-align: center;
+
+      background: url("https://www.transparenttextures.com/patterns/stardust.png"),
+                  linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* CARD */
+    .card {
+      background: rgba(255,255,255,0.1);
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 350px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+
+      opacity: 0;
+      transform: translateY(50px);
+      transition: 0.6s;
+    }
+
+    .card.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      border-radius: 30px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .insta {
+      background: linear-gradient(45deg,#feda75,#d62976);
+    }
+
+    .telegram {
+      background: #229ED9;
+    }
+
+    .deals {
+      background: #00c853;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="blogs.html">Blogs</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- SECTION 1 -->
+<div class="card">
+  <h1>Welcome 🚀</h1>
+  <p>Yaha tumhe daily life, earning tips aur fun content milega 😎</p>
+
+  <a href="https://www.instagram.com/anywhere_z?igsh=cXNxcWU3NHBqOTg4" class="btn insta">Instagram</a>
+  <a href="https://t.me/anywherezvastav" class="btn telegram">Telegram</a>
+</div>
+
+<!-- SECTION 2 -->
+<div class="card">
+  <h2>My Journey</h2>
+  <p>Yaha click karke dekho tumhare liye special dund ke laaya hu. 🔥</p>
+
+  <a href="#" class="btn deals">Best Deals 🔥</a>
+</div>
+
+<!-- SECTION 3 -->
+<div class="card">
+  <h2>Follow for More</h2>
+  <p>Daily updates ke liye mujhe follow karo 👇</p>
+
+  <a href="https://www.instagram.com/anywhere_z?igsh=cXNxcWU3NHBqOTg4" class="btn insta">Follow Now</a>
+</div>
+
+<!-- SCROLL ANIMATION SCRIPT -->
+<script>
+  const cards = document.querySelectorAll(".card");
+
+  window.addEventListener("scroll", () => {
+    cards.forEach(card => {
+      const top = card.getBoundingClientRect().top;
+
+      if (top < window.innerHeight - 50) {
+        card.classList.add("show");
+      }
+    });
+  });
+
+  // First load pe bhi show ho
+  window.dispatchEvent(new Event('scroll'));
+</script>
+
+</body>
+</html>
